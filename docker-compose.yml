@@ -1,0 +1,17 @@
+version: '2' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  angular: # name of the first service
+    image: gcr.io/starwars/swapi_webapp:v1
+    build: webapp # specify the directory of the Dockerfile
+    ports:
+      - "80:80" # specify port forewarding
+    links:
+      - api
+
+  api: #name of the second service
+    image: gcr.io/starwars/swapi_api:v1
+    build: api # specify the directory of the Dockerfile
+    ports:
+      - "8000:8000" #specify ports forewarding

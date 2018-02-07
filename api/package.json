@@ -1,0 +1,14 @@
+{
+  "name": "docker_api_swapi",
+  "version": "1.0.0",
+  "description": "Swapi Node.js on Docker",
+  "author": "Stephane Garnier <stephane.garnier@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "swapi-node": "^0.4.3"
+  }
+}

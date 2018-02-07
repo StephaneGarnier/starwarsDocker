@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title >Swapi web search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <base href="/">
+    <!-- META -->
+    <!-- for Google -->
+    <meta name="author" content="Stephane Garnier" />
+    <meta name="application-name" content="Swapi web search" />
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link rel="stylesheet" href="css/contactstyle.css" type="text/css" media="all">
+    <link href="css/single.css" rel="stylesheet" type="text/css">
+    <link href="css/medile.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div ui-view></div>
+</body>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+<script src="public.module.js"></script>
+
+<script src="js/controllers/search.controller.js"></script>
+
+</html>

@@ -1,0 +1,107 @@
+<!-- header -->
+<div class="header">
+    <div class="container">
+        <div class="w3layouts_logo">
+            <a href="index.html"><h1>StarWars<span>search</span></h1></a>
+        </div>
+        <div class="w3_search">
+            <form novalidate>
+                <input type="text" name="Search" placeholder="Search" required="" ng-model="searchString">
+                <input type="submit" value="Go" ng-click="search(searchString)">
+            </form>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!-- //header -->
+<!-- Latest-tv-series -->
+<div class="Latest-tv-series">
+    <div class="clearfix"> </div>
+    <h4 class="latest-text w3_latest_text w3_home_popular" ng-if="films.length > 0">Films</h4>
+    <div class="container" ng-if="films.length > 0">
+        <section class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="agile_tv_series_grid">
+                            <div class="col-md-6 agile_tv_series_grid_right" ng-repeat="film in films">
+                                <p class="fexi_header">{{film.title}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Opening crawl<label>:</label></span>{{film.opening_crawl}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Director<label>:</label></span>{{film.director}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Producer<label>:</label></span>{{film.producer}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Date<label>:</label></span>{{film.release_date}}</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    &nbsp;
+    <div class="clearfix"> </div>
+    <h4 class="latest-text w3_latest_text w3_home_popular" ng-if="starships.length > 0">Starships</h4>
+    <div class="container" ng-if="starships.length > 0">
+        <section class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="agile_tv_series_grid">
+                            <div class="col-md-6 agile_tv_series_grid_right" ng-repeat="starship in starships">
+                                <p class="fexi_header">{{starship.name}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Model<label>:</label></span>{{starship.model}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Manufacturer<label>:</label></span>{{starship.manufacturer}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Starship class<label>:</label></span>{{starship.starship_class}}</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    &nbsp;
+    <h4 class="latest-text w3_latest_text w3_home_popular" ng-if="planets.length > 0">Planets</h4>
+    <div class="container" ng-if="planets.length > 0">
+        <section class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="agile_tv_series_grid">
+                            <div class="col-md-6 agile_tv_series_grid_right" ng-repeat="planet in planets">
+                                <p class="fexi_header">{{planet.name}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Climate<label>:</label></span>{{planet.climate}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Gravity<label>:</label></span>{{planet.gravity}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Terrain<label>:</label></span>{{planet.terrain}}</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    &nbsp;
+    <h4 class="latest-text w3_latest_text w3_home_popular" ng-if="people.length > 0">People</h4>
+    <div class="container" ng-if="people.length > 0">
+        <section class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="agile_tv_series_grid">
+                            <div class="col-md-6 agile_tv_series_grid_right" ng-repeat="person in people">
+                                <p class="fexi_header">{{person.name}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Gender<label>:</label></span>{{person.gender}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Height<label>:</label></span>{{person.height}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Mass<label>:</label></span>{{person.mass}}</p>
+                                <p class="fexi_header_para"></p><span class="conjuring_w3">Birthday<label>:</label></span>{{person.birth_year}}</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- //Latest-tv-series -->
