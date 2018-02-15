@@ -10,18 +10,20 @@
     <meta name="author" content="Stephane Garnier" />
     <meta name="application-name" content="Swapi web search" />
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!-- build:css /style/css/globals.css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contactstyle.css">
     <link rel="stylesheet" href="css/contactstyle.css" type="text/css" media="all">
     <link href="css/single.css" rel="stylesheet" type="text/css">
     <link href="css/medile.css" rel="stylesheet" type="text/css">
+    <!-- endbuild -->
 </head>
 
 <body>
     <div ui-view></div>
 </body>
-
+<!-- build:js /js/app.js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
@@ -30,5 +32,6 @@
 <script src="public.module.js"></script>
 
 <script src="js/controllers/search.controller.js"></script>
+<!-- endbuild -->
 
 </html>

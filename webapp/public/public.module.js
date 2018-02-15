@@ -17,5 +17,5 @@
                 templateUrl: 'views/search.html',
                 controller: 'searchController'
             });
-    }])
+    }]);
 })();

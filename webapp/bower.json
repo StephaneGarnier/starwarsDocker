@@ -7,7 +7,6 @@
     "angular": "~1.6.7",
     "jquery": "~2.1.4",
     "angular-bootstrap": "~2.5.0",
-    "angular-ui-router": "~0.2.0",
-    "bootstrap": "~3.3.5"
+    "angular-ui-router": "~0.2.0"
   }
 }
